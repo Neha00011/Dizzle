@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <style>
+    body {
+      background-color: #212121;
+      color: #fff;
+    }
+    #heading,
+    #subheading,
+    #main-part {
+      display: flex;
+      margin-bottom: 0cm;
+      margin-top: 0.5cm;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      height: 200px;
+      width: 300px;
+      border-radius: 20px;
+      padding: 4px 4px 4px 9px;
+    }
+  </style>
+  <body>
+    <div class="start">
+      <h2 id="heading">Welcome to Drizzle!</h2>
+      <br />
+      <h4 id="subheading">Enter city name below</h4>
+    </div>
+    <div id="input-part">
+      <form id="main-part">
+        <label for="enterField" id="">enter city</label>
+        <input type="text" id="enterField" class="enterField" />
+        <input type="submit" id="subt" value="Submit" class="Submit" />
+      </form>
+    </div>
+    <div class="card" id="card">
+      <div id="my-card"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
